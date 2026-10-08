@@ -4,7 +4,7 @@ REVISAR QUE ARCHIVO SE VA A ACTUALIZAR, UN ARCHIVO NUEVO NO DEBE TENER UN NOMBRE
 
 
 Colores usados en la pagina: 
-Elemento	Color	HEX aproximado
+
 Fondo de la página	Blanco azulado muy claro	
 #EEF2F8
 Tarjeta principal y contenedores	Blanco grisáceo	
