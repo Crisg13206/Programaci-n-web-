@@ -1,0 +1,174 @@
+
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+
+
+nav[aria-label="Ruta de navegación"] {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--card-bg);
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+nav[aria-label="Ruta de navegación"] p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+nav[aria-label="Ruta de navegación"] a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav[aria-label="Ruta de navegación"] a:hover {
+    text-decoration: underline;
+}
+
+nav[aria-label="Ruta de navegación"] a::after {
+    content: " › ";
+    color: var(--text-muted);
+    margin: 0 0.4rem;
+}
+
+nav[aria-label="Ruta de navegación"] strong {
+    color: var(--text-main);
+}
+
+
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
+section {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+section > h3 {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+details {
+    background-color: #fafafa;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+details[open] {
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.08);
+}
+
+summary {
+    padding: 1rem 1.25rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f1f5f9;
+    color: var(--text-main);
+    transition: background-color 0.2s ease;
+}
+
+summary:hover {
+    background-color: #e2e8f0;
+}
+
+summary strong {
+    color: var(--text-main);
+}
+
+
+article {
+    padding: 1.25rem;
+    border-top: 1px solid var(--border-color);
+    background-color: #ffffff;
+}
+
+article h4 {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+article a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+article a:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+
+hr {
+    border: none;
+    border-top: 1px dashed var(--border-color);
+    margin: 1rem 0;
+}

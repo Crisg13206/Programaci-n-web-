@@ -1,0 +1,23 @@
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #e0dddd;
+    width: 350px;
+    height: 390px;
+    margin: 0%;
+}
+
+#cuerpocc{
+
+    justify-content: center;
+    justify-items: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*Estilos para la pagina crear cuenta

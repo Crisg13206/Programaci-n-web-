@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaciones</title>
+</head>
+<body>
+  <main>
+    <section id="evaluaciones">
+      <h1>Crear Nueva Evaluación</h1>
+
+      <form action="/crear-evaluacion" method="POST">
+
+        <fieldset>
+          <legend>Información general</legend>
+          <p>
+            <label for="titulo">Título de la evaluación:</label>
+            <input type="text" id="titulo" name="titulo" required>
+          </p>
+          <p>
+            <label for="materia">Materia / Curso:</label>
+            <select id="materia" name="materia" required>
+              <option value="">Seleccione una materia</option>
+              <option value="introduccion">Introducción a ISC</option>
+              <option value="redes">Redes 1</option>
+            </select>
+          </p>
+          <p>
+            <label for="descripcion">Descripción / Instrucciones:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tiempo</legend>
+          <p>
+            <label for="apertura">Fecha y hora de apertura:</label>
+            <input type="datetime-local" id="apertura" name="apertura" required>
+          </p>
+          <p>
+            <label for="cierre">Fecha y hora de cierre:</label>
+            <input type="datetime-local" id="cierre" name="cierre" required>
+          </p>
+          <p>
+            <label for="duracion">Duración del examen (minutos):</label>
+            <input type="number" id="duracion" name="duracion" min="5" max="180" value="60" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Calificación</legend>
+            <p>
+                <label for="tipo-calificacion">Método de calificación:</label>
+                <select id="tipo-calificacion" name="tipo-calificacion" required>
+                    <option value="">Seleccione un método</option>
+                    <option value="automatica-total">Automática total</option>
+                    <option value="automatica-parcial">Automática parcial (requiere revisión)</option>
+                    <option value="manual">Manual por el docente</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="puntaje-aprobatorio">Puntaje mínimo aprobatorio:</label>
+                <input type="number" id="puntaje-aprobatorio" name="puntaje-aprobatorio" min="0" max="100" value="60" required>
+            </p>
+
+            <p>
+                <span>Mostrar al alumno después de enviar:</span><br>
+                <label><input type="checkbox" name="feedback" value="puntaje" checked> Puntaje obtenido</label><br>
+                <label><input type="checkbox" name="feedback" value="respuestas_correctas" checked> Respuestas correctas</label><br>
+                <label><input type="checkbox" name="feedback" value="retroalimentacion"> Retroalimentación por pregunta</label>
+            </p>
+
+            <p>
+              <label for="retro-bien">Si aprueba:</label>
+              <textarea id="retro-bien" name="retro-bien" rows="3" placeholder="¡Excelente trabajo! Has aprobado la evaluación."></textarea>
+            </p>
+
+            <p>
+              <label for="retro-mal">Si no aprueba:</label>
+              <textarea id="retro-mal" name="retro-mal" rows="3" placeholder="Necesitas repasar el material. Puedes intentarlo de nuevo."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Otras opciones</legend>
+          <p>
+            <label for="intentos">Intentos permitidos:</label>
+            <input type="number" id="intentos" name="intentos" min="1" max="3" value="1" required>
+          </p>
+          <p>
+            <label for="calificacion">Calificación máxima:</label>
+            <input type="number" id="calificacion" name="calificacion" min="1" max="100" value="10" required>
+          </p>
+          <p>
+            <label><input type="checkbox" name="aleatorio"> Orden de preguntas aleatorio</label>
+          </p>
+          <p>
+            <label><input type="checkbox" name="mostrar_resultados"> Mostrar resultados al finalizar</label>
+          </p>
+          <p>
+            <label><input type="checkbox" name="permitir_atras"> Permitir regresar a preguntas anteriores</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Crear Evaluación</button>
+          <button type="button">Cancelar</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+</body>
+</html>
