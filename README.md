@@ -1,3 +1,8 @@
+REVISAR QUE ARCHIVO SE VA A ACTUALIZAR, UN ARCHIVO NUEVO NO DEBE TENER UN NOMBRE QUE UN ARCHIVO YA CREADO TENGA
+
+
+
+
 Colores usados en la pagina: 
 Elemento	Color	HEX aproximado
 Fondo de la página	Blanco azulado muy claro	
