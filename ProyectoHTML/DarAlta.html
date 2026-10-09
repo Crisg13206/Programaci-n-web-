@@ -5,39 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar alta</title>
-    <link rel="stylesheet" href="estilos(AT).css">
+    <link rel="stylesheet" href="CSS/estilos(AT).css">
 </head>
 
 <body>
     <header id="header">
-        <label>PLACEHOLDER PARA UN ICONO</label>
-        <label>---PAGINA NOMBRE</label>
+        <h1>Dar de alta</h1>
     </header>
+
+
+
 
 
     <section>
 
-        <table id="tabla">
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Grupo</th>
-                <th>Estado</th>
-            </tr>
-            <tr>
-                <th>Abelardo</th>
-                <th>Mungarro</th>
-                <th>ISC-1</th>
-                <th><button type="button">✔</button>
-                    <button type="button">✖</button>
-                </th>
-            </tr>
+        <div id="divFormulario">
+            <h2>Registrar alumno</h2>
 
-        </table>
+            <form id="formAlta">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
 
+                <div>
+                    <label for="grupo">Grupo: </label>
+                    <select id="grupo" name="grupo" required>
+                        <option value="" disabled selected>Selecciona un grupo</option>
+                        <option value="ISC-1">ISC-1</option>
+                        <option value="ISC-2">ISC-2</option>
+                        <option value="ISC-3">ISC-3</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="estado">Estado: </label>
+                    <select id="estado" name="estado" required>
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+
+                <div >
+                    <button type="submit" id="Agregar">✔ Agregar</button>
+                    <button type="reset" id="Cancelar">✖ Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="divTabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Grupo</th>
+                        <th>Estado</th>
+                        <th>Opción</th>
+                    </tr>
+                </thead>
+                
+            </table>
+        </div>
 
     </section>
+
+
 
 
 

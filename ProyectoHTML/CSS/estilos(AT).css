@@ -1,21 +1,109 @@
-#header{
-    border-bottom: 2px solid #ccc;
+#header {
+    border-bottom: 2px solid #E6EBF3;
     padding: 20px;
     align-items: center;
     justify-content: center;
-   
+
 }
 
-#tabla{
+body {
+    background-color: #EEF2F8;
+    color: #1F2937;
+}
 
+h1 {
+    color: #1F2937;
+    margin-top: 0;
+    border-bottom: 3px solid #E4E8EF;
+    padding-bottom: 15px;
+}
+#estado {
+    height: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#divFormulario {
+    background-color: #F6F8FB;
+    border: 1px solid #E4E8EF;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#formAlta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 18px 20px;
+}
+
+#botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+#nombre,#apellido {
+    height: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#Agregar {
+    border-radius: 2px;
+    background-color: #2040E0;
+    color: #ccd0e0;
+}
+
+#Cancelar {
+    border-radius: 2px;
+    background-color: #2040E0;
+    color: #ccd0e0;
+
+}
+
+#grupo {
+   height: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+#tabla {
     width: 100%;
-    border-radius: 3px;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E8EF;
+    border-radius: 8px;
+
+
 }
 
-th, td{
-padding: 12px 16px;
-text-align: left;
-border: 1px solid #000;
-border-bottom: 1px solid #ccc;
+#tabla th {
+    background-color: #E6EBF3;
+    color: #2D3748;
+    text-align: left;
+    padding: 10px 14px;
 }
+
+#tabla td {
+    padding: 10px 14px;
+    border-top: 1px solid #E4E8EF;
+    border-spacing: 0
+}
+
+
+#tabla td button {
+    background-color: #2040E0;
+    color: white;
+    padding: 6px 14px;
+}
+
+#tabla td button:hover {
+    background-color: #2F3FBF;
+}
+
+
 /*Estilos para la pagina dar de alta, no agregar nada aun 

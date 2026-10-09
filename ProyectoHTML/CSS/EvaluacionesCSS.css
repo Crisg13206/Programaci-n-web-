@@ -1,0 +1,114 @@
+       body {
+            background-color: #EEF2F8;
+            color: #1F2937;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        #evaluaciones {
+            background-color: #F6F8FB;
+            border: 1px solid #E4E8EF;
+            border-radius: 12px;
+            padding: 25px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #1F2937;
+            margin-top: 0;
+            border-bottom: 3px solid #E4E8EF;
+            padding-bottom: 15px;
+        }
+
+        fieldset {
+            border: 2px solid #4C63D2;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+        }
+
+        legend {
+            background-color: #E6EBF3;
+            color: #2D3748;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid #E4E8EF;
+        }
+
+        label, span {
+            color: #1F2937;
+        }
+
+        fieldset p span {
+            color: #2D3748;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="datetime-local"],
+        select,
+        textarea {
+            background-color: #FFFFFF;
+            border: 1px solid #9AA3B2;
+            color: #1F2937;
+            border-radius: 6px;
+            padding: 8px 10px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            margin-top: 4px;
+        }
+
+        input[type="checkbox"] {
+            accent-color: #2040E0;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #4C63D2;
+            box-shadow: 0 0 0 2px rgba(76, 99, 210, 0.2);
+        }
+
+        button {
+            border: none;
+            border-radius: 6px;
+            padding: 10px 22px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #2040E0;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2F3FBF;
+        }
+
+        button[type="button"] {
+            background-color: #E4E8EF;
+            color: #1F2937;
+            border: 1px solid #9AA3B2;
+        }
+
+        button[type="button"]:hover {
+            background-color: #E6EBF3;
+        }
+
+        a {
+            color: #2F3FBF;
+        }

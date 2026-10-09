@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF03 - Entregar Ejercicio</title>
+</head>
+<body>
+
+    <!-- Encabezado general y navegación del sistema -->
+    <header>
+        <h1>Plataforma Educativa</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Mis Cursos</a></li>
+                <li><a href="tareas.html">Tareas y Ejercicios</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la entrega -->
+    <main>
+
+        <!-- Navegación tipo migas de pan (Breadcrumbs) -->
+        <nav aria-label="Migas de pan">
+            <ol>
+                <li><a href="cursos.html">Programación Web</a></li>
+                <li><a href="unidad1.html">Unidad 1: HTML5</a></li>
+                <li><span>Ejercicio 1: Estructura Semántica</span></li>
+            </ol>
+        </nav>
+
+        <section>
+            <h2>Ejercicio 1: Construcción de Estructura Semántica HTML</h2>
+            
+            <!-- Detalles del ejercicio -->
+            <article>
+                <h3>Instrucciones de la Actividad</h3>
+                <p><strong>Fecha límite de entrega:</strong> 15 de octubre de 2026, 23:59 hrs</p>
+                <p><strong>Puntuación máxima:</strong> 100 puntos</p>
+                <p><strong>Descripción:</strong> Suba el archivo comprimido (.zip) con la estructura del proyecto y agregue los comentarios adicionales necesarios en el campo de texto.</p>
+                
+                <h4>Archivos de apoyo / Guía</h4>
+                <ul>
+                    <li><a href="docs/guia-ejercicio-1.pdf" download>Descargar Guía del Ejercicio (PDF)</a></li>
+                    <li><a href="docs/plantilla-base.zip" download>Descargar Plantilla Base (.zip)</a></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <!-- Formulario de entrega (RF03) -->
+            <article>
+                <h3>Formulario de Entrega</h3>
+
+                <form action="confirmacion-entrega.html" method="post" enctype="multipart/form-data">
+                    
+                    <!-- Campo para adjuntar archivos -->
+                    <p>
+                        <label for="archivo-ejercicio">Adjuntar archivo(s) del ejercicio (PDF, ZIP, RAR):</label><br>
+                        <input type="file" id="archivo-ejercicio" name="archivo_ejercicio" required accept=".pdf,.zip,.rar,.txt">
+                    </p>
+
+                    <!-- Campo para comentarios o respuesta de texto -->
+                    <p>
+                        <label for="comentarios-estudiante">Comentarios adicionales o enlace al repositorio (opcional):</label><br>
+                        <textarea id="comentarios-estudiante" name="comentarios" rows="5" cols="50" placeholder="Escriba aquí sus observaciones o pegue el enlace de GitHub..."></textarea>
+                    </p>
+
+                    <!-- Declaración de compromiso de autoría -->
+                    <p>
+                        <input type="checkbox" id="declaracion-autoria" name="declaracion_autoria" required>
+                        <label for="declaracion-autoria">Confirmo que este trabajo es de mi propia autoría y cumple con las normas académicas.</label>
+                    </p>
+
+                    <!-- Botones de acción -->
+                    <p>
+                        <button type="submit">Enviar Ejercicio</button>
+                        <button type="reset">Limpiar Formulario</button>
+                        <a href="tareas.html">Cancelar y regresar</a>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Equipo 2 - Sistema de Gestión de Aprendizaje</p>
+    </footer>
+
+</body>
+</html>
